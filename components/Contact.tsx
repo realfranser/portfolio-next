@@ -52,15 +52,20 @@ export const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <Link
+                  <a
                     href="https://www.linkedin.com/in/fran-serrano"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
-                  </Link>
-                  <a href="https://github.com/realfranser">
+                  </a>
+                  <a
+                    href="https://github.com/realfranser"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>

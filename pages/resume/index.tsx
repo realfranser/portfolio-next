@@ -19,10 +19,18 @@ const resume = () => {
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">Francisco Serrano</h2>
           <div className="flex">
-            <a href="https://www.linkedin.com/in/fran-serrano/">
+            <a
+              href="https://www.linkedin.com/in/fran-serrano/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
-            <a href="https://github.com/realfranser">
+            <a
+              href="https://github.com/realfranser"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
