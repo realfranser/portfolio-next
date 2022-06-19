@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const resume = () => {
   return (
@@ -16,6 +16,17 @@ const resume = () => {
 
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
         <h2 className="text-center">Resume</h2>
+        <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
+          <a
+            href="https://drive.google.com/file/d/1EVgIRfTtThI66ZaLeiswODqXxbIt7Ccm/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className="hover:underline">
+              ¡Disponible también en modelo infográfico!
+            </h3>
+          </a>
+        </div>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">Francisco Serrano</h2>
           <div className="flex">

@@ -1,12 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-
 import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
 
-import fullstackToolboxImg from "../public/assets/projects/webtools.png";
+import onlineAffiliatesImg from "../../public/assets/projects/online_affiliates.png";
 
-const twitch = () => {
+const netflix = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -15,11 +14,11 @@ const twitch = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={fullstackToolboxImg}
+          src={onlineAffiliatesImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Twitch UI</h2>
+          <h2 className="py-2">Netflix App</h2>
           <h3>React JS / Tailwind / Firebase</h3>
         </div>
       </div>
@@ -66,7 +65,7 @@ const twitch = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
+        <Link href="/blog">
           <p className="underline cursor-pointer">Back</p>
         </Link>
       </div>
@@ -74,4 +73,4 @@ const twitch = () => {
   );
 };
 
-export default twitch;
+export default netflix;

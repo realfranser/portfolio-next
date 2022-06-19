@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import onlineAffiliatesImg from "../public/assets/projects/online_affiliates.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const netflix = () => {
+import machineLearningImg from "../../public/assets/projects/ml_gcp.png";
+
+const Crypto = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -13,11 +14,11 @@ const netflix = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={onlineAffiliatesImg}
+          src={machineLearningImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Netflix App</h2>
+          <h2 className="py-2">Crypto App</h2>
           <h3>React JS / Tailwind / Firebase</h3>
         </div>
       </div>
@@ -64,7 +65,7 @@ const netflix = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
+        <Link href="/blog">
           <p className="underline cursor-pointer">Back</p>
         </Link>
       </div>
@@ -72,4 +73,4 @@ const netflix = () => {
   );
 };
 
-export default netflix;
+export default Crypto;

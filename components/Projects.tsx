@@ -12,22 +12,22 @@ import { IProjectItemProps, ProjectItem } from "./ProjectItem";
 const PROJECTS_DATA: IProjectItemProps[] = [
   {
     backgroundImg: machineLearningImg,
-    projectUrl: "https://github.com/realfranser/MachineLearning-GoogleCloud",
+    projectUrl: "/blog/property",
     title: "Machine Learning with Google Cloud",
   },
   {
     backgroundImg: onlineAffiliatesImg,
-    projectUrl: "https://github.com/realfranser/webasociates",
+    projectUrl: "/blog/crypto",
     title: "React JS affiliate offers list website",
   },
   {
     backgroundImg: portfolio,
-    projectUrl: "https://github.com/realfranser/portfolio",
+    projectUrl: "/blog/netflix",
     title: "Vanilla JS personal web portfolio",
   },
   {
     backgroundImg: fullstackToolbox,
-    projectUrl: "https://github.com/realfranser/fullstack-toolbox",
+    projectUrl: "/blog/twitch",
     title: "End to end fullstack template for e-commerce websites",
   },
 ];

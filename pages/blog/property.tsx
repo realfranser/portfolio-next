@@ -4,7 +4,7 @@ import React from "react";
 
 import { RiRadioButtonFill } from "react-icons/ri";
 
-import portfolio from "../public/assets/projects/portfolio.png";
+import portfolio from "../../public/assets/projects/portfolio.png";
 
 const property = () => {
   return (
@@ -66,7 +66,7 @@ const property = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
+        <Link href="/blog">
           <p className="underline cursor-pointer">Back</p>
         </Link>
       </div>
