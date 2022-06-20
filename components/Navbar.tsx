@@ -71,8 +71,8 @@ export const Navbar = () => {
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+            <Link href="/blog">
+              <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -80,7 +80,9 @@ export const Navbar = () => {
               </li>
             </Link>
             <Link href="/resume">
-              <li className="ml-10 text-sm uppercase hover:border-b">CV</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Curriculum Vitae
+              </li>
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">

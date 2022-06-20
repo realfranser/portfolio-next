@@ -14,7 +14,8 @@ export const Main = () => {
             LET&apos;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I&apos;m <span className="text-[#5651e5]"> Francisco</span>
+            {/*Hi, I&apos;m <span className="text-[#5651e5]"> Francisco</span>*/}
+            Hola, soy <span className="text-[#5651e5]"> Francisco</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
