@@ -6,14 +6,14 @@
   "scripts": {
     "serve": "firebase emulators:start",
     "dev": "next dev",
-    "deploy": "firebase deploy --only hosting,hosting",
+    "deploy": "yarn build && firebase deploy --only hosting,functions:nextServer",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
-    "firebase-tools": "^11.0.1",
+    "firebase-admin": "^11.0.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -26,6 +26,8 @@
     "autoprefixer": "^10.4.7",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
+    "firebase-functions": "^3.21.2",
+    "firebase-tools": "^11.1.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24",
     "typescript": "4.7.3"

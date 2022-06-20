@@ -1,18 +1,17 @@
-const functions = require("firebase-tools");
+const functions = require("firebase-functions");
 const { default: next } = require("next");
 
-const isDev = process.env.NODE_ENV !== "prod";
+const isDev = process.env.NODE_ENV !== "production";
 
 const server = next({
   dev: isDev,
-  conf: { distDir: "./build" },
+  conf: { distDir: "./build/" },
 });
 
 const nextjsHandle = server.getRequestHandler();
 
 /* Firebase function */
-exports.nextServer = functions.https.onRequest((req, res) => {
-  return server.prepare().then(() => {
-    return nextjsHandle(req, res);
-  });
+exports.nextServer = functions.https.onRequest(async (req, res) => {
+  await server.prepare();
+  return await nextjsHandle(req, res);
 });

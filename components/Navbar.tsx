@@ -56,7 +56,7 @@ export const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
-            src="/../public/assets/realfranserLogo.png"
+            src="/assets/realfranserLogo.png"
             alt="/"
             width="115"
             height="37"
@@ -80,7 +80,7 @@ export const Navbar = () => {
               </li>
             </Link>
             <Link href="/resume">
-              <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">CV</li>
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">

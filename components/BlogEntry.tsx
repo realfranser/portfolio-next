@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-import blogEntries from "../locales/es-ES/blog/blogEntries.json";
-
 const PROJECTS_IMAGES_PATH = "/assets/projects";
 
 export interface IBlogEntryData {
