@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const resume = () => {
   return (
@@ -15,14 +15,33 @@ const resume = () => {
       </Head>
 
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
-        <h2 className="text-center">Resume</h2>
+        <h2 className="text-center">Curriculum Vitae</h2>
+        <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
+          <a
+            href="https://drive.google.com/file/d/1EVgIRfTtThI66ZaLeiswODqXxbIt7Ccm/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3 className="hover:underline">
+              ¡Disponible también en modelo infográfico!
+            </h3>
+          </a>
+        </div>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">Francisco Serrano</h2>
           <div className="flex">
-            <a href="https://www.linkedin.com/in/fran-serrano/">
+            <a
+              href="https://www.linkedin.com/in/fran-serrano/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
-            <a href="https://github.com/realfranser">
+            <a
+              href="https://github.com/realfranser"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
@@ -69,62 +88,60 @@ const resume = () => {
             Professional Experience
           </h5>
           <p className="italic">
-            <span className="font-bold">Preston EMS</span>
-            <span className="px-2">|</span>Grayson County, TX
+            <span className="font-bold">Twilio Inc.</span>
+            <span className="px-2">|</span>Madrid, Spain
           </p>
-          <p className="py-1 italic">Paramedic (Current)</p>
+          <p className="py-1 italic">
+            Ingeniero de Software (L1) (Feb 2022 - Actual))
+          </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Lead paramedic on an ALS 911 ambulance covering rural Grayson
-              County.
+              Ingeniero de Software Junior, imbolucrado principalmente en
+              desarrollo de servicios backend.
             </li>
             <li>
-              Work surrounding departments organizing treatment protocols and
-              facilitate hands on training operations.
+              Responsabilidades sobre taread de DevOps como diseño e
+              implementación de tuberías CI/CD o dockerización de servicios y
+              bases de datos.
             </li>
             <li>
-              Manage high stress 911 situations such as medical emergencies,
-              traumatic emergencies, and water accidents
+              Fuerte desarrollo de tests unitarios y de integración para
+              asegurar la resiliencia del software implementado.
             </li>
             <li>
-              Public outreach and relations for the municipality from healthcare
-              awareness to training methods.
+              Trabajo en equipo e involucración en presentaciones y demos de los
+              requisitos implementados.
             </li>
           </ul>
         </div>
         {/* Experience */}
         <div className="py-4">
           <p className="italic">
-            <span className="font-bold">CITY OF SHERMAN, TX</span>
-            <span className="px-2">|</span>Sherman, TX
+            <span className="font-bold">Twilio Inc.</span>
+            <span className="px-2">|</span>Madrid, Spain
           </p>
-          <p className="py-1 italic">Paramedic / Firefighter (2010 - 2019)</p>
+          <p className="py-1 italic">
+            Ingeniero de Software (Prácticas) (Jul 2021 - Sep 2021)
+          </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
+              Mejora en la experiencia de usuarios de múltiples países referente
+              a la regulación de la compra números de teléfono en los mismos.
             </li>
             <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
+              Desarrollo e2e, desde el frontend con React, backend for frontend
+              con Express y backend con Django Python.
             </li>
             <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
+              Familiarización con tecnologías DevOps como Jenkins, AWS, GitHub
+              actions, Docker, etc.
             </li>
             <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
+              Trabajo mano a mano con grandes expertos técnicos en la industria
             </li>
             <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
+              Coordinación con equipos de desarrollo extranjeros y en diferentes
+              zonas horarias como India, California, etc.
             </li>
           </ul>
         </div>
@@ -134,7 +151,7 @@ const resume = () => {
             <span className="font-bold italic">
               BIGCOMMERCE, SHOPIFY, WOOCOMMERCE
             </span>
-            <span className="px-2">|</span>Sachse, TX
+            <span className="px-2">|</span>Madrid, Spain
           </p>
           <p className="py-1 italic">Freelance Work</p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">

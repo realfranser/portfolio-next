@@ -16,10 +16,10 @@ export const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/property" ||
-      router.asPath === "/crypto" ||
-      router.asPath === "/netflix" ||
-      router.asPath === "/twitch"
+      router.asPath === "/blog/property" ||
+      router.asPath === "/blog/crypto" ||
+      router.asPath === "/blog/netflix" ||
+      router.asPath === "/blog/twitch"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -56,7 +56,7 @@ export const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
-            src="/../public/assets/realfranserLogo.png"
+            src="/assets/realfranserLogo.png"
             alt="/"
             width="115"
             height="37"
@@ -71,8 +71,8 @@ export const Navbar = () => {
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+            <Link href="/blog">
+              <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -80,7 +80,9 @@ export const Navbar = () => {
               </li>
             </Link>
             <Link href="/resume">
-              <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Curriculum Vitae
+              </li>
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -170,12 +172,20 @@ export const Navbar = () => {
                 Let&apos;s Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a href="https://www.linkedin.com/in/fran-serrano/">
+                <a
+                  href="https://www.linkedin.com/in/fran-serrano/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
                 </a>
-                <a href="https://github.com/realfranser">
+                <a
+                  href="https://github.com/realfranser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub />
                   </div>

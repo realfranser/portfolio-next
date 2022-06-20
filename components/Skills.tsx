@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const TECHNOLOGIES_IMAGES_PATH = "/../public/assets/technologies";
+const TECHNOLOGIES_IMAGES_PATH = "/assets/technologies";
 
 interface ISkillCardProps {
   img: string;
