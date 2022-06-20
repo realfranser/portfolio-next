@@ -1,18 +1,21 @@
 {
   "hosting": {
-    "public": "build",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**/**",
+        "functions": "nextjs-server"
+      }
+    ]
   },
   "functions": {
     "source": ".",
-    "runtime": "nodejs16"
-  },
-  "emulators": {
-    "hosting": {
-      "port": 5000
-    },
-    "ui": {
-      "enabled": true
-    }
+    "ignore": [
+      ".firebase/**",
+      ".firebaserc",
+      "firebase.json",
+      "**/node_modules/**",
+      "**/public/**"
+    ]
   }
 }
