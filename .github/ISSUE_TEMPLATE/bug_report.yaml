@@ -32,7 +32,7 @@ body:
       label: Priority
       description: Select the priority for the implementation of this new feature
       options:
-        - Fire `:fire:`
+        - ":fire:"
         - High :arrow_double_up:
         - Medium :arrow_forward:
         - Low :arrow_double_down:
