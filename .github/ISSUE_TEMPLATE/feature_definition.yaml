@@ -31,8 +31,7 @@ body:
     attributes:
       label: References and examples
       description: Reference links, previous commits, code snippets, etc.
-      placeholder: "[Similar PR](https://github.com/realfranser/portfolio-next/pull/9)"
-      value: "ex. Screenshot of expected UI"
+      value: "ex. [Similar PR](https://github.com/realfranser/portfolio-next/pull/9)"
     validations:
       required: false
   - type: dropdown
@@ -51,7 +50,7 @@ body:
     id: caveats
     attributes:
       label: Caveats
-      description: descrive anything else that should be considered or has to take a further look regarding this feature
+      description: Describe anything else that should be considered or has to take a further look regarding this feature
       render: shell
   - type: checkboxes
     id: terms
