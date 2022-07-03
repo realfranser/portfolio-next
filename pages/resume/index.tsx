@@ -92,11 +92,11 @@ const resume = () => {
             <span className="px-2">|</span>Madrid, Spain
           </p>
           <p className="py-1 italic">
-            Ingeniero de Software (L1) (Feb 2022 - Actual))
+            Ingeniero de Software (L1) (Feb 2022 - Actual)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ingeniero de Software Junior, imbolucrado principalmente en
+              Ingeniero de Software Junior, involucrado principalmente en
               desarrollo de servicios backend.
             </li>
             <li>

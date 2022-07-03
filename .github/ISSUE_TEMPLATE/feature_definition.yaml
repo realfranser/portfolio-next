@@ -1,0 +1,62 @@
+name: Feature Definition
+description: Define requirements for a feature
+title: "[Feature]: "
+labels: ["feature", "enhancement"]
+assignees:
+  - realfranser
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to define this feature!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: Description of the new feature that should be implemented
+      placeholder: Also describe what it shouldn't be implemented if needed
+      value: "Create a new blog entry"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References and examples
+      description: Reference links, previous commits, code snippets, etc.
+      value: "ex. [Similar PR](https://github.com/realfranser/portfolio-next/pull/9)"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Select the priority for the implementation of this new feature
+      options:
+        - Fire
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: caveats
+    attributes:
+      label: Caveats
+      description: Describe anything else that should be considered or has to take a further look regarding this feature
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/realfranser/portfolio-next/blob/master/.github/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
