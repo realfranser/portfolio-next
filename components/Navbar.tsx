@@ -7,6 +7,21 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+import navbarDataJSON from "../locales/es-ES/navbar.json";
+
+interface INavbarData {
+  home: string;
+  about: string;
+  blog: string;
+  projects: string;
+  resume: string;
+  contact: string;
+  mobileTitle: string;
+  mobileContactPhrase: string;
+}
+
+const navbarData: INavbarData = navbarDataJSON;
+
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -66,27 +81,33 @@ export const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                {navbarData.home}
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                {navbarData.about}
+              </li>
             </Link>
             <Link href="/blog">
-              <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                {navbarData.blog}
+              </li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
+                {navbarData.projects}
               </li>
             </Link>
             <Link href="/resume">
               <li className="ml-10 text-sm uppercase hover:border-b">
-                Curriculum Vitae
+                {navbarData.resume}
               </li>
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
+                {navbarData.contact}
               </li>
             </Link>
           </ul>
@@ -135,7 +156,7 @@ export const Navbar = () => {
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Let&apos;s build something legendary together
+                {navbarData.mobileTitle}
               </p>
             </div>
           </div>
@@ -143,33 +164,38 @@ export const Navbar = () => {
             <ul className="uppercase">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
+                  {navbarData.home}
                 </li>
               </Link>
               <Link href="/#about">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
+                  {navbarData.about}
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/blog">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
+                  {navbarData.blog}
                 </li>
               </Link>
               <Link href="/#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
+                  {navbarData.projects}
+                </li>
+              </Link>
+              <Link href="/resume">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  {navbarData.resume}
                 </li>
               </Link>
               <Link href="/#contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
+                  {navbarData.contact}
                 </li>
               </Link>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
-                Let&apos;s Connect
+                {navbarData.mobileContactPhrase}
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a

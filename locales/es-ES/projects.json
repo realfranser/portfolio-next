@@ -1,0 +1,26 @@
+{
+  "title": "Proyectos",
+  "subtitle": "Qué he construido",
+  "projects": [
+    {
+      "backgroundImg": "ml_gcp.png",
+      "projectUrl": "/blog/property",
+      "title": "Machine Learning con Google Cloud"
+    },
+    {
+      "backgroundImg": "online_affiliates.png",
+      "projectUrl": "/blog/crypto",
+      "title": "Web de ofertas de afiliados con React"
+    },
+    {
+      "backgroundImg": "portfolio.png",
+      "projectUrl": "/blog/netflix",
+      "title": "Portfolio web personal con Vanilla Javascript"
+    },
+    {
+      "backgroundImg": "webtools.png",
+      "projectUrl": "/blog/twitch",
+      "title": "Template web fullstack para webs de comercio digital"
+    }
+  ]
+}

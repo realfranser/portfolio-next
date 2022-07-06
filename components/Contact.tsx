@@ -7,6 +7,24 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
+import contactDataJSON from "../locales/es-ES/contact.json";
+
+interface IContactData {
+  title: string;
+  subtitle: string;
+  possition: string;
+  description: string;
+  connect: string;
+  sendName: string;
+  sendPhoneNumber: string;
+  sendEmail: string;
+  sendSubject: string;
+  sendMessage: string;
+  sendButton: string;
+}
+
+const contactData: IContactData = contactDataJSON;
+
 export const Contact = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -26,9 +44,9 @@ export const Contact = () => {
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Contact
+          {contactData.title}
         </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <h2 className="py-4">{contactData.subtitle}</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -43,14 +61,11 @@ export const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Francisco Serrano</h2>
-                <p>Front-End Developer</p>
-                <p className="py-4">
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
-                </p>
+                <p>{contactData.possition}</p>
+                <p className="py-4">{contactData.description}</p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="uppercase pt-8">{contactData.connect}</p>
                 <div className="flex items-center justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/fran-serrano"
@@ -94,7 +109,9 @@ export const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
+                    <label className="uppercase text-sm py-2">
+                      {contactData.sendName}
+                    </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
@@ -105,7 +122,7 @@ export const Contact = () => {
                   </div>
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">
-                      Phone Number
+                      {contactData.sendPhoneNumber}
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -117,7 +134,9 @@ export const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label className="uppercase text-sm py-2">
+                    {contactData.sendEmail}
+                  </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
@@ -127,7 +146,9 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
+                  <label className="uppercase text-sm py-2">
+                    {contactData.sendSubject}
+                  </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
@@ -137,7 +158,9 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  <label className="uppercase text-sm py-2">
+                    {contactData.sendMessage}
+                  </label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows={10}
@@ -147,7 +170,7 @@ export const Contact = () => {
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
+                  {contactData.sendButton}
                 </button>
               </form>
             </div>

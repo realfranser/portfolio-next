@@ -1,7 +1,11 @@
 {
-  "title": "Baby Weight Predictor",
-  "subtitle": "Machine learning con Google Cloud",
-  "text_1": "I have spent the last 12 years in the fire service working as a professional firefighter & paramedic. I have always had a knack for technology and working with computers. In 2019 I started working with HTML & CSS to make some minor edits on a small business website that I was operating. What I thought was just a few small edits turned into a love for programming.",
-  "text_2": "Fascinated with how intricate programming can be I was quickly drawn to learn more. I started learning javascript and was even more enthused with making websites interactive. I then started freelancing for e-commerce companies on the Shopify platform. I am now spending my time building projects with React JS, Firebase, and learning new technologies.",
-  "projects_link": "Check out some of my latest projects"
+  "section": "Carta de Motivación",
+  "title": "Francisco Javier Serrano Arrese",
+  "subtitle": "serranoarresejavier@gmail.com",
+  "text_1": "En relación con la oferta de trabajo publicada el pasado día 8 de julio su página de LinkedIn, les adjunto mi currículum. Creo que mi perfil se ajusta a los requisitos exigidos en la descipción del trabajo.",
+  "text_2": "Soy un ingeniero de software español de 21 años motivado y buscando constantemente aprender las últimas tencologías web, tanto front como back. Mi objetivo es aprender a desarrollar servicios web complejos y aprender a escalarlos de forma eficiente y segura para clientes a nivel global.",
+  "text_3": "Actualmente ocupo el puesto de Ingeniero de Software Junior en Twilio desde febrero de 2022. Este puesto de jornada completa lo comencé a la vez que finalizaba el último curso del Grado en Ingeniería Informática. Esta circustancia fue para mi un enorme reto personal, el cual me exigió disciplina, habilidad y trabajo duro. Además de esto, desarrollo proyectos open source haciendo uso de las últimas tecnologías y siendo capaz de generar ingresos adicionales con estos proyectos.",
+  "text_4": "A la espera de recibir noticias suyas, saludos cordiales",
+  "name": "Francisco Serrano",
+  "projects_link": "Revise mi trayectoria en LinkedIn"
 }
