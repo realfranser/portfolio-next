@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import onlineAffiliatesImg from "../../public/assets/projects/online_affiliates.png";
 
-const netflix = () => {
+const OnlineAffiliates = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -73,4 +73,4 @@ const netflix = () => {
   );
 };
 
-export default netflix;
+export default OnlineAffiliates;

@@ -1,0 +1,71 @@
+{
+  "title": "Currículum",
+  "infographic": "Disponible también en modelo infográfico",
+  "subtitle_1": "Trabajo en equipo",
+  "subtitle_2": "Desarrollo fullstack",
+  "subtitle_3": "Resolución de problemas",
+  "description": "Soy un ingeniero de software español de 21 años motivado y buscando constantemente aprender las últimas tencologías web, tanto front como back. Mi objetivo es aprender a desarrollar servicios web complejos y aprender a escalarlos de forma eficiente y segura para clientes a nivel global. Actualmente ocupo el puesto de Ingeniero de Software Junior en Twilio desde febrero de 2022. Este puesto de jornada completa lo comencé a la vez que finalizaba el último curso del Grado en Ingeniería Informática.",
+  "skills_title": "Habilidades",
+  "skills_technical_skills_title": "Habilidades técnicas",
+  "skills_technical_skills_list": [
+    "Front (React, Next, Tailwind, Typescript)",
+    "Back (Java, Go, Python, Express, Typescript)",
+    "DevOps (AWS, GCP, Jenkins, Docker)"
+  ],
+  "skills_soft_skills_title": "Habilidades personales",
+  "skills_soft_skills_list": [
+    "Comunicación con compañeros",
+    "Presentaciones a grandes audiencias",
+    "Visión R&D"
+  ],
+  "experience_title": "Experiencia profesional",
+  "experience_list": [
+    {
+      "company": "Twilio Inc.",
+      "location": "Madrid, España",
+      "possition": "Ingeniero de Software - Junior",
+      "duration": "Feb 2022 - Actualidad",
+      "responsibilities": [
+        "Ingeniero de Software Junior, involucrado principalmente en desarrollo de servicios backend.",
+        "Responsabilidades sobre taread de DevOps como diseño e implementación de tuberías CI/CD o dockerización de servicios y bases de datos. Fuerte desarrollo de tests unitarios y de integración para asegurar la resiliencia del software implementado.",
+        "Trabajo en equipo e involucración en presentaciones y demos de los requisitos implementados."
+      ]
+    },
+    {
+      "company": "Twilio Inc.",
+      "location": "Madrid, España",
+      "possition": "Ingeniero de Software - Intern",
+      "duration": "Jul 2021 - Sep 2021",
+      "responsibilities": [
+        "Mejora en la experiencia de usuarios de múltiples países referente a la regulación de la compra números de teléfono en los mismos.",
+        "Desarrollo e2e, desde el frontend con React, backend for frontend con Express y backend con Django Python.",
+        "Trabajo mano a mano con grandes expertos técnicos en la industria. Coordinación con equipos de desarrollo extranjeros y en diferentes zonas horarias como India, California, etc."
+      ]
+    },
+    {
+      "company": "Club de Campo Villa de Madrid",
+      "location": "Madrid, España",
+      "possition": "Profesor de tenis",
+      "duration": "Nov 2018 - May 2021",
+      "responsibilities": [
+        "Trabajé como profesor de tenis entre 14 y 20 horas semanales durante los tres primeros cursos de la carrera como funte de ingesos complementaria.",
+        "Fui profesor de tenis para alumnos de todo tipo de edades. Además de necesitar el título de monitor, el trabajo requería de saber tratar con clientes."
+      ]
+    }
+  ],
+  "education_title": "Educación",
+  "education_list": [
+    {
+      "institution": "Universidad Politécnica de Madrid",
+      "title": "Grado en Ingeniería Informática",
+      "duration": "Sep 2018 - Jul 2022",
+      "description": "La carrera de Ingeniería Informática es uno de los grados de ingeniería más exigentes en España, cursado en un campus de excelencia internacional. Durante la carrera he estudiado y experimentado con campos muy diversos de la informática, pero particularmente con el Data Science e Inteligencia Artificial. Destacar que mi TFG reúne todos mis conocimientos de desarrollo web en un solo proyecto."
+    },
+    {
+      "institution": "Cambridge Assesment English",
+      "title": "Advanced C1",
+      "duration": "Feb 2019",
+      "description": "Titulación avanzada de lengua inglesa por la escuela oficial de Cambridge."
+    }
+  ]
+}

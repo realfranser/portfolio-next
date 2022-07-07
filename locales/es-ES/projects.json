@@ -4,22 +4,22 @@
   "projects": [
     {
       "backgroundImg": "ml_gcp.png",
-      "projectUrl": "/blog/property",
+      "projectUrl": "/blog/machine-learning",
       "title": "Machine Learning con Google Cloud"
     },
     {
       "backgroundImg": "online_affiliates.png",
-      "projectUrl": "/blog/crypto",
+      "projectUrl": "/blog/online-affiliates",
       "title": "Web de ofertas de afiliados con React"
     },
     {
       "backgroundImg": "portfolio.png",
-      "projectUrl": "/blog/netflix",
+      "projectUrl": "/blog/portfolio",
       "title": "Portfolio web personal con Vanilla Javascript"
     },
     {
       "backgroundImg": "webtools.png",
-      "projectUrl": "/blog/twitch",
+      "projectUrl": "/blog/fullstack-toolbox",
       "title": "Template web fullstack para webs de comercio digital"
     }
   ]

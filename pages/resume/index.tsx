@@ -1,6 +1,44 @@
 import React from "react";
 import Head from "next/head";
-import { FaDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import resumeDataJSON from "../../locales/es-ES/resume/resume.json";
+
+interface IResumeExperienceItem {
+  company: string;
+  location: string;
+  possition: string;
+  duration: string;
+  responsibilities: string[];
+}
+
+interface IResumeEducationItem {
+  institution: string;
+  title: string;
+  duration: string;
+  description: string;
+}
+
+interface IResumeData {
+  title: string;
+  infographic: string;
+  subtitle_1: string;
+  subtitle_2: string;
+  subtitle_3: string;
+  description: string;
+  skills_title: string;
+  skills_technical_skills_title: string;
+  skills_technical_skills_list: string[];
+  skills_soft_skills_title: string;
+  skills_soft_skills_list: string[];
+  experience_title: string;
+  experience_list: IResumeExperienceItem[];
+  education_title: string;
+  education_list: IResumeEducationItem[];
+}
+
+const resumeData: IResumeData = resumeDataJSON;
 
 const resume = () => {
   return (
@@ -15,16 +53,14 @@ const resume = () => {
       </Head>
 
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
-        <h2 className="text-center">Curriculum Vitae</h2>
+        <h2 className="text-center">{resumeData.title}</h2>
         <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           <a
             href="https://drive.google.com/file/d/1EVgIRfTtThI66ZaLeiswODqXxbIt7Ccm/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h3 className="hover:underline">
-              ¡Disponible también en modelo infográfico!
-            </h3>
+            <h3 className="hover:underline">{resumeData.infographic}</h3>
           </a>
         </div>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
@@ -48,126 +84,87 @@ const resume = () => {
         </div>
         <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           <p>
-            Proven Leadership <span className="px-1">|</span> Web Development{" "}
-            <span className="px-1">|</span> Complex Problem Solving
+            {resumeData.subtitle_1}
+            <span className="px-1">|</span>
+            {resumeData.subtitle_2}
+            <span className="px-1">|</span>
+            {resumeData.subtitle_3}
           </p>
         </div>
-        <p>
-          Analytical, innovative, and motivated web development professional
-          with experience in customer service, team leadership, and
-          organizational effectiveness in fast-paced and challenging
-          environments. Adept at developing strategies and driving streamlined
-          operations. Diverse analytical skills, team collaboration, and
-          relationship building. Consummate professional, and motivated leader,
-          with solid interpersonal abilities and complex problem-solving skills.
-          Effective and proven track record of critical thinking, idea
-          generation, and optimizing efficiencies.
-        </p>
+        <p>{resumeData.description}</p>
 
         {/* Skills */}
         <div className="text-center py-4">
-          <h5 className="text-center underline text-[18px] py-2">Skills</h5>
+          <h5 className="text-center underline text-[18px] py-2">
+            {resumeData.skills_title}
+          </h5>
           <p className="py-2">
-            <span className="font-bold">Technical Skills</span>
-            <span className="px-2">|</span>Front-End Web Developer
-            <span className="px-2">|</span> HTML <span className="px-2">|</span>
-            CSS <span className="px-2">|</span>React
-            <span className="px-2">|</span>Tailwind
-            <span className="px-2">|</span> Firebase
+            <span className="font-bold">
+              {resumeData.skills_technical_skills_title}
+            </span>
+            {resumeData.skills_technical_skills_list.map((item: string) => (
+              <>
+                <span className="px-2">|</span>
+                <span className="px-2">{item}</span>
+              </>
+            ))}
           </p>
           <p className="py-2">
-            <span className="font-bold">Amazon Web Services</span>
-            <span className="px-2">|</span>Amazon Web Services Cloud
-            Practitioner
+            <span className="font-bold">
+              {resumeData.skills_soft_skills_title}
+            </span>
+            {resumeData.skills_soft_skills_list.map((item: string) => (
+              <>
+                <span className="px-2">|</span>
+                <span className="px-2">{item}</span>
+              </>
+            ))}
           </p>
         </div>
 
         {/* Experience */}
         <div className="py-4">
           <h5 className="text-center underline text-[18px] py-4">
-            Professional Experience
+            {resumeData.experience_title}
           </h5>
-          <p className="italic">
-            <span className="font-bold">Twilio Inc.</span>
-            <span className="px-2">|</span>Madrid, Spain
-          </p>
-          <p className="py-1 italic">
-            Ingeniero de Software (L1) (Feb 2022 - Actual)
-          </p>
-          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-            <li>
-              Ingeniero de Software Junior, involucrado principalmente en
-              desarrollo de servicios backend.
-            </li>
-            <li>
-              Responsabilidades sobre taread de DevOps como diseño e
-              implementación de tuberías CI/CD o dockerización de servicios y
-              bases de datos.
-            </li>
-            <li>
-              Fuerte desarrollo de tests unitarios y de integración para
-              asegurar la resiliencia del software implementado.
-            </li>
-            <li>
-              Trabajo en equipo e involucración en presentaciones y demos de los
-              requisitos implementados.
-            </li>
-          </ul>
+          {resumeData.experience_list.map((item: IResumeExperienceItem) => (
+            <>
+              <p className="italic">
+                <span className="font-bold">{item.company}</span>
+                <span className="px-2">|</span>
+                {item.location}
+              </p>
+              <p className="py-1 italic">
+                {item.possition} ({item.duration})
+              </p>
+              <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+                {item.responsibilities.map((item: string) => (
+                  <>
+                    <li>{item}</li>
+                  </>
+                ))}
+              </ul>
+            </>
+          ))}
         </div>
-        {/* Experience */}
+        {/* Education */}
         <div className="py-4">
-          <p className="italic">
-            <span className="font-bold">Twilio Inc.</span>
-            <span className="px-2">|</span>Madrid, Spain
-          </p>
-          <p className="py-1 italic">
-            Ingeniero de Software (Prácticas) (Jul 2021 - Sep 2021)
-          </p>
-          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-            <li>
-              Mejora en la experiencia de usuarios de múltiples países referente
-              a la regulación de la compra números de teléfono en los mismos.
-            </li>
-            <li>
-              Desarrollo e2e, desde el frontend con React, backend for frontend
-              con Express y backend con Django Python.
-            </li>
-            <li>
-              Familiarización con tecnologías DevOps como Jenkins, AWS, GitHub
-              actions, Docker, etc.
-            </li>
-            <li>
-              Trabajo mano a mano con grandes expertos técnicos en la industria
-            </li>
-            <li>
-              Coordinación con equipos de desarrollo extranjeros y en diferentes
-              zonas horarias como India, California, etc.
-            </li>
-          </ul>
-        </div>
-        {/* Experience */}
-        <div className="py-4">
-          <p className="italic">
-            <span className="font-bold italic">
-              BIGCOMMERCE, SHOPIFY, WOOCOMMERCE
-            </span>
-            <span className="px-2">|</span>Madrid, Spain
-          </p>
-          <p className="py-1 italic">Freelance Work</p>
-          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-            <li>
-              Ensured comprehensive understanding of HTML, CSS, and JavaScript
-              to troubleshoot issues and concerns.
-            </li>
-            <li>
-              Fixes small bugs, configure operation and analytic plugins, and
-              design changes as needed.
-            </li>
-            <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
-            </li>
-          </ul>
+          <h5 className="text-center underline text-[18px] py-4">
+            {resumeData.education_title}
+          </h5>
+          {resumeData.education_list.map((item: IResumeEducationItem) => (
+            <>
+              <p className="italic">
+                <span className="font-bold">{item.institution}</span>
+              </p>
+              <p className="py-1 italic">
+                {item.title} ({item.duration})
+              </p>
+              <span className="px-2">{item.description}</span>
+              <br></br>
+              <br></br>
+            </>
+          ))}
         </div>
       </div>
     </>

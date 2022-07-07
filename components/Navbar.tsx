@@ -31,10 +31,10 @@ export const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/blog/property" ||
-      router.asPath === "/blog/crypto" ||
-      router.asPath === "/blog/netflix" ||
-      router.asPath === "/blog/twitch"
+      router.asPath === "/blog/fullstack-toolbox" ||
+      router.asPath === "/blog/google-cloud" ||
+      router.asPath === "/blog/portfolio" ||
+      router.asPath === "/blog/online-affiliates"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");

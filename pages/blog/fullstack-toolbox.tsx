@@ -6,7 +6,7 @@ import { RiRadioButtonFill } from "react-icons/ri";
 
 import fullstackToolboxImg from "../../public/assets/projects/webtools.png";
 
-const twitch = () => {
+const FullstackToolbox = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -74,4 +74,4 @@ const twitch = () => {
   );
 };
 
-export default twitch;
+export default FullstackToolbox;

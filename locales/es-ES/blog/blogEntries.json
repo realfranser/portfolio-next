@@ -5,7 +5,7 @@
     "text_1": "Fullstack Toolbox es un template web end to end cuyo objetivo es proveer una infraestructura software desde la cual desarrollar culquier producto o servicio e-commerce. Esta supone la base a nivel, arquitecura, patrones de diseño, lenguajes de programación, seguridad, y otros elementos desde los cuales escalar cualquier empresa que quiere posicionarse online. A su vez también puede servir para que negocios ya existentes puedan migrar su e-commerce desde un proveedor externo a poder auto gestionar su infraestructura.",
     "text_2": "Este proyecto no solo se limita a la implementación del código, o a la integración con un proveedor cloud. Además se definen una serie de pautas de buenas prácticas. Estas pautas están integradas con GitHub, y por ejemplo, permite que el Tech Lead o ingeniero a cargo de cada equipo de desarrollo pueda definir los requisitos de calidad de código, tests unitarios y de integración, pautas de formateo comunes para todo el equipo, etc",
     "project_img": "webtools.png",
-    "project_link": "twitch",
+    "project_link": "fullstack-toolbox",
     "project_link_comment": "Ver entrada del blog en detalle"
   },
   {
@@ -14,7 +14,7 @@
     "text_1": "El aprendizaje automático es importante porque brinda a las empresas una visión de las tendencias en el comportamiento de los clientes y los patrones operativos comerciales, además de respaldar el desarrollo de nuevos productos. Muchas de las empresas líderes de la actualidad, como Facebook, Google y Uber, hacen del aprendizaje automático una parte central de sus operaciones. El aprendizaje automático se ha convertido en un diferenciador competitivo importante para muchas empresas.",
     "text_2": "En este curso se ha implementado un servicio de ML con Tensorflow, GCP y BigQuery para poder proveer a los hospitales de una herramienta para predecir el peso de bebés y poder así poner a disposición de la madre las herramientas médicas necesarias para poder afrontar cualquier complicación o anomalía.",
     "project_img": "ml_gcp.png",
-    "project_link": "crypto",
+    "project_link": "machine-learning",
     "project_link_comment": "Ver entrada del blog en detalle"
   },
   {
@@ -23,16 +23,16 @@
     "text_1": "Esta página web hace un ranking de las mejores ofertas de afiliación en cada momento. Estas ofertas se traducen en compensación de acciones o monetaria en la cuenta bancaria asociada a la propia aplicación que se patrocina. Estos beneficios también nos reportan como patrocinadores un rendimiento",
     "text_2": "El marketing de afiliación es un modelo de publicidad en el que una empresa compensa a los editores externos para generar tráfico o derivaciones a los productos y servicios de la empresa. Los editores externos son afiliados y la tarifa de comisión los incentiva a encontrar formas de promocionar la empresa.",
     "project_img": "online_affiliates.png",
-    "project_link": "netflix",
+    "project_link": "online-affiliates",
     "project_link_comment": "Ver entrada del blog en detalle"
   },
   {
     "title": "Portfolio",
-    "subtitle": "Machine learning con Google Cloud",
-    "text_1": "El aprendizaje automático es importante porque brinda a las empresas una visión de las tendencias en el comportamiento de los clientes y los patrones operativos comerciales, además de respaldar el desarrollo de nuevos productos. Muchas de las empresas líderes de la actualidad, como Facebook, Google y Uber, hacen del aprendizaje automático una parte central de sus operaciones. El aprendizaje automático se ha convertido en un diferenciador competitivo importante para muchas empresas.",
-    "text_2": "En este curso se ha implementado un servicio de ML con Tensorflow, GCP y BigQuery para poder proveer a los hospitales de una herramienta para predecir el peso de bebés y poder así poner a disposición de la madre las herramientas médicas necesarias para poder afrontar cualquier complicación o anomalía.",
+    "subtitle": "Portfolio web con vanilla JavaScript",
+    "text_1": "Este es mi portfolio web personal desarrollado con vanilla JavaScript y sass css. El principal objetivo es poder crear una presencia web online desde mi propio dominio para así darme a conocer dentro de la industria del software.",
+    "text_2": "Además del objetivo mencionado anteriormente, el desarrollo de este frontend web me ha ayudado a afianzar mis conocimientos en las tecnologías JavaScript, HTML y CSS además de aprender sass. Por otro lado he desplegado esta aplicación en los servicios de provisión cloud de GitHub.",
     "project_img": "portfolio.png",
-    "project_link": "property",
+    "project_link": "portfolio",
     "project_link_comment": "Ver entrada del blog en detalle"
   }
 ]
