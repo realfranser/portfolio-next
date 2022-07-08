@@ -13,7 +13,7 @@ interface INavbarData {
   home: string;
   about: string;
   blog: string;
-  projects: string;
+  video: string;
   resume: string;
   contact: string;
   mobileTitle: string;
@@ -90,14 +90,14 @@ export const Navbar = () => {
                 {navbarData.about}
               </li>
             </Link>
+            <Link href="/video">
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                {navbarData.video}
+              </li>
+            </Link>
             <Link href="/blog">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 {navbarData.blog}
-              </li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                {navbarData.projects}
               </li>
             </Link>
             <Link href="/resume">
@@ -177,9 +177,9 @@ export const Navbar = () => {
                   {navbarData.blog}
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/video">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  {navbarData.projects}
+                  {navbarData.video}
                 </li>
               </Link>
               <Link href="/resume">
