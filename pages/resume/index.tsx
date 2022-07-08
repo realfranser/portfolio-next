@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import resumeDataJSON from "../../locales/es-ES/resume/resume.json";
 
@@ -66,6 +66,13 @@ const resume = () => {
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">Francisco Serrano</h2>
           <div className="flex">
+            <a
+              href="https://drive.google.com/file/d/1W4Z_4lyPvBUohBZ55ffn4XmE_yIqD0nV/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaDownload size={20} style={{ marginRight: "1rem" }} />
+            </a>
             <a
               href="https://www.linkedin.com/in/fran-serrano/"
               target="_blank"
