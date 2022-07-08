@@ -56,7 +56,7 @@ const resume = () => {
         <h2 className="text-center">{resumeData.title}</h2>
         <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
           <a
-            href="https://drive.google.com/file/d/1EVgIRfTtThI66ZaLeiswODqXxbIt7Ccm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1DHumYPMV608zNxMHm2yHj-mPJjPz0ke3/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

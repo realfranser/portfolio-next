@@ -4,6 +4,10 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
 import machineLearningImg from "../../public/assets/projects/ml_gcp.png";
+import { IBlogEntryData } from "../../components/BlogEntry";
+import blogEntriesJSON from "../../locales/es-ES/blog/blogEntries.json";
+
+const blogEntry: IBlogEntryData = blogEntriesJSON[1];
 
 const MachineLearning = () => {
   return (
@@ -27,18 +31,24 @@ const MachineLearning = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup & signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
-          </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <br></br>
+          <p>{blogEntry.text_1}</p>
+          <br></br>
+          <p>{blogEntry.text_2}</p>
+          <a
+            href="https://drive.google.com/file/d/1yGx9DDbPeEp8CsqkcdLENRgRtD1C1oqi/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+          </a>
+          <a
+            href="https://github.com/realfranser/MachineLearning-GoogleCloud"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-8 py-2 mt-4">Code</button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

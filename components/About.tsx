@@ -33,13 +33,6 @@ export const About = () => {
           <p className="py-2 text-gray-600">{aboutData.text_3}</p>
           <p className="py-2 text-gray-600">{aboutData.text_4}</p>
           <p className="py-2 text-gray-600">{aboutData.name}</p>
-          {/*
-          <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">
-              {aboutData.projects_link}
-            </p>
-          </Link>
-          */}
           <a
             href="https://www.linkedin.com/in/fran-serrano/"
             target="_blank"
