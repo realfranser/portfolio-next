@@ -47,9 +47,9 @@ const resume = () => {
         <title>Fran | Resume</title>
         <meta
           name="description"
-          content="I'm a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
+          content="I'm a Junior Software Engineer passionate about learning new technologies"
         />
-        <link rel="icon" href="/fav.png" />
+        <link rel="icon" href="/assets/nextLogoFull.png" />
       </Head>
 
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
