@@ -5,7 +5,7 @@ const Video = () => {
     <div>
       <iframe
         className="absolute w-full h-full"
-        src="https://www.youtube.com/embed/tDVeQRwtHMw"
+        src="https://www.youtube.com/embed/f5bAwXWTrDo"
       />
     </div>
   );

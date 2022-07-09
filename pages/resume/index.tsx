@@ -67,7 +67,7 @@ const resume = () => {
           <h2 className="text-center">Francisco Serrano</h2>
           <div className="flex">
             <a
-              href="https://drive.google.com/file/d/1W4Z_4lyPvBUohBZ55ffn4XmE_yIqD0nV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1MNUMFRs8aOJwjG8LGL_EEVctfowsaRMJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
